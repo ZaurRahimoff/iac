@@ -1,0 +1,31 @@
+@mixin breakpoint($bp) {
+    
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+    
+}
+
+@mixin scrollbars($size, $border-radius, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+      border-radius: $border-radius;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+      border-radius: $border-radius;
+    }
+  
+    // For Internet Explorer
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+  }

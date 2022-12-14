@@ -1,0 +1,57 @@
+<script src="assets/plugins/jquery/jquery.min.js"></script>
+<script src="assets/plugins/bootstrap/js/popper.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Select 2 -->
+<script src="assets/plugins/select2/select2.min.js"></script>
+<script src="assets/plugins/select2/material-select2.min.js"></script>
+<!-- Animation -->
+<script src="assets/plugins/velocity/velocity.min.js"></script>
+<!-- Owl carousel -->
+<!-- <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/plugins/owlcarousel/owl.settings.js"></script> -->
+<!-- Main js -->
+<script src="assets/js/app.js"></script>
+
+<!-- DataTable settings -->
+<script>
+	$(document).ready(function () {
+
+	// Shimmer example
+	// setTimeout(function () {
+	//         $('.shimmer-box').removeClass('d-flex').addClass('d-none');
+	//         $('.show-data').removeClass('d-none').addClass('d-flex');
+	//     }, 3000);
+
+	//    get your data from server here
+	//    $.post('getdata.php', function (data) {
+	//        // process your data here
+	//       hide placeholder
+	//       $('.timeline-wrapper').hide();
+	//    })
+
+	/*******************************
+	  * ACCORDION WITH TOGGLE ICONS
+	  *******************************/
+	function addIcon(e) {
+		$(e.target)
+			.prev('.accordion-header')
+			.find(".circle-plus")
+			.addClass('closed')
+			.removeClass('opened');
+	}
+
+	function removeIcon(e) {
+		$(e.target)
+			.prev('.accordion-header')
+			.find(".circle-plus")
+			.addClass('opened')
+			.removeClass('closed');
+	}
+
+	$('.accordion__faq').on('hidden.bs.collapse', addIcon);
+	$('.accordion__faq').on('shown.bs.collapse', removeIcon);
+
+});
+
+</script>

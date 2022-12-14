@@ -1,0 +1,134 @@
+.package__modal {
+	// display: block !important;
+	// opacity: 1 !important;
+
+	.modal__close-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+
+		i {
+			color: $black;
+			font-size: 24px;
+			margin: 11px 11px 11px 0;
+
+			@include breakpoint($mobile-bp) {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.modal-content {
+		background: #ffffff;
+		border-radius: 20px;
+
+		@include breakpoint($mobile-bp) {
+			border-radius: 10px;
+		}
+	}
+
+	.modal-header {
+		border: none;
+		padding: 30px 30px 10px 30px;
+		display: inline-flex;
+		align-items: center;
+
+		@include breakpoint($mobile-bp) {
+			padding: 30px 20px 10px 20px;
+		}
+
+		.status__side {
+			.package-opportunities {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				color: #64656a;
+				margin-bottom: 0;
+			}
+
+			.package-name {
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 30px;
+				color: #64656a;
+			}
+		}
+
+		.price__side {
+			display: inline-flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+
+			.price-txt {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				color: #64656a;
+				margin-right: 5px;
+				margin-bottom: 0;
+
+				@include breakpoint($mobile-bp) {
+					display: none;
+				}
+			}
+
+			.package-price {
+				font-weight: 600;
+				font-size: 34px;
+				line-height: 48px;
+				color: #64656a;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.modal-body {
+		border: none;
+		padding: 10px 30px 30px 30px;
+
+		@include breakpoint($mobile-bp) {
+			padding: 10px 20px 20px 20px;
+		}
+
+		@include scrollbars(5px, 10px, $grey, $grey-10);
+
+		&.package__content {
+			.opportunities__head {
+				background: #e3d468;
+				border-radius: 5px;
+				padding: 8px 10px;
+				margin-bottom: 10px;
+
+				.head-txt {
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 18px;
+					color: #ffffff;
+					margin-bottom: 0;
+				}
+			}
+
+			.package-list {
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 24px;
+				color: #64656a;
+
+				ul {
+					padding-left: 20px;
+
+					li {
+
+						ul {
+							list-style: none;
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

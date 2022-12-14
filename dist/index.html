@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IAC 2023</title>
+    
+    <!-- <script data-search-pseudo-elements defer src="assets/plugins/fontawesome/js/all.min.js?_v=20221214213112"></script> -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css?_v=20221214213112">
+    <link rel="stylesheet" href="assets/css/customicons.min.css?_v=20221214213112">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css?_v=20221214213112">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css?_v=20221214213112">
+    <!-- Owl carousel -->
+    <!-- <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.theme.default.min.css?_v=20221214213112">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css?_v=20221214213112"> -->
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style.min.css?_v=20221214213112"></head>
+
+<body>
+
+    <!-- Head -->
+    <nav class="navbar navbar-dark bg-white">
+        <div class="container">
+            <!-- Header-top -->
+            <div class="col-12 col-md-6">
+            	<h2 class="header-title">74th International Astronautical Congress</h2>
+            </div>
+            <div class="col-12 col-md-6">
+            	<div class="partners__block">
+            		<div class="partner__box">
+            			<div class="partner-title">ORGANIZED BY</div>
+            			<img class="partner-logo img-fluid" src="assets/images/iaf-logo.svg">
+            		</div>
+            		<div class="partner__box">
+            			<div class="partner-title">HOSTED BY</div>
+            			<img class="partner-logo img-fluid" src="assets/images/azercosmos-logo.svg">
+            		</div>
+            		<div class="partner__box">
+            			<div class="partner-title">SUPPORTED BY</div>
+            			<div class="logos-group">
+            				<img class="partner-logo img-fluid ms-0" src="assets/images/iaa-logo.svg">
+            				<img class="partner-logo img-fluid ms-2" src="assets/images/iisl-logo.svg">
+            				<img class="partner-logo img-fluid ms-2" src="assets/images/sgac-logo.svg">
+            			</div>
+            		</div>
+            	</div>
+            </div>        </div>
+    </nav>
+    <div class="container p-0">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg sticky-top p-0" aria-label="Main navigation">
+                <!-- Navbar -->
+                <div class="nav d-flex justify-content-between align-items-center flex-nowrap w-100 mx-auto">
+                	<a class="navbar-brand" href="/">
+                		<img class="img-responsive d-none d-lg-flex" src="assets/images/iac-logo.svg" alt="IAC">
+                		<img class="img-responsive d-flex d-lg-none" src="assets/images/iac-logo.svg" alt="IAC">
+                	</a>
+                
+                	<div class="d-flex d-md-none align-items-center ms-auto">
+                		<a class="btn btn-personal-area" href="#">
+                			<span>Personal area</span>
+                		</a>
+                	</div>
+                
+                	<button class="hamburger-menu navbar-toggler p-0 border-0 position-relative" id="navbarSideCollapse"
+                		aria-label="Toggle navigation">
+                		<div class="hamburger-lines">
+                			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                				<!-- <circle cx="50" cy="50" r="30" /> -->
+                				<path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+                				<path class="line--2" d="M0 50h70" />
+                				<path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+                			</svg>
+                		</div>
+                	</button>
+                
+                
+                	<div class="offcanvas-collapse d-flex d-lg-none" data-bs-backdrop="static" id="navbarsExampleDefault">
+                		<ul class="navbar-nav mob-nav">
+                			<li class="nav-item">
+                				<a class="nav-link" aria-current="page" href="about.html">About</a>
+                			</li>
+                			<li class="nav-item">
+                				<a class="nav-link" href="#">Programme</a>
+                			</li>
+                			<li class="nav-item">
+                				<a class="nav-link" href="#">Registration</a>
+                			</li>
+                			<li class="nav-item">
+                				<a class="nav-link" href="#">Travelling to Baku</a>
+                			</li>
+                			<li class="nav-item">
+                				<a class="nav-link" href="#">Media Centre</a>
+                			</li>
+                			<!-- 
+                					<li class="nav-item has-children">
+                						<a class="nav-link open-submenu" href="javascript:void(0)" onclick="openNav()">Media</a>
+                						<div class="submenu">
+                							<div class="submenu-content">
+                								<ul class="content__menu navbar-nav">
+                									<li class="nav-item">
+                										<a href="javascript:void(0)" class="close-submenu" onclick="closeNav()">Media</a>
+                									</li>
+                									<li class="nav-item">
+                										<a class="nav-link" href="#">News</a>
+                									</li>
+                									<li class="nav-item">
+                										<a class="nav-link" href="#">Reports</a>
+                									</li>
+                									<li class="nav-item">
+                										<a class="nav-link" href="#">Media contacts</a>
+                									</li>
+                								</ul>
+                							</div>
+                						</div>
+                					</li> -->
+                
+                			<li class="nav-item">
+                				<a class="nav-link" href="contacts.html">Contact Us</a>
+                			</li>
+                		</ul>
+                
+                	</div>
+                
+                
+                	<div class="navbar-collapse d-none d-lg-flex">
+                		<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                			<li class="nav-item">
+                				<a class="nav-link " aria-current="page" href="about.html">About</a>
+                			</li>
+                			<li class="nav-item">
+                				<a class="nav-link" href="#">Programme</a>
+                			</li>
+                			<li class="nav-item">
+                				<a class="nav-link active" href="#">Registration</a>
+                			</li>
+                			<li class="nav-item">
+                				<a class="nav-link" href="#">Travelling to Baku</a>
+                			</li>
+                			<!-- <li class="nav-item">
+                						<a class="nav-link" href="#">Media Centre</a>
+                					</li>
+                					<li class="nav-item dropdown">
+                						<a class="nav-link" href="#">
+                							Media
+                						</a>
+                						<ul class="dropdown-menu">
+                							<li><a class="dropdown-item" href="#">News</a></li>
+                							<li><a class="dropdown-item" href="#">Reports</a></li>
+                							<li><a class="dropdown-item" href="#">Media contacts</a></li>
+                						</ul>
+                					</li> -->
+                			<li class="nav-item">
+                				<a class="nav-link" href="contacts.html">Contact Us</a>
+                			</li>
+                		</ul>
+                		<div class="d-none d-md-flex align-items-center ms-auto">
+                			<a class="btn btn-personal-area" href="#">
+                				<span>Personal area</span>
+                			</a>
+                		</div>
+                	</div>
+                
+                </div>            </nav>
+        </header>
+    </div>
+
+
+    <!-- Main -->
+    <main class="flex-shrink-0 px-3 h-100 mb-auto">
+        <div class="container p-0">
+            <!-- Content -->
+            
+            <div class="col-12 col-lg-12">
+            	<h2 class="page-title mt-4">IAC 2023 Registration</h2>
+            	<p class="page-txt mt-2">By joining a range of exhibitors with high-level services and solutions within the space
+            		industry, you will be able to demonstrate your offerings to a group of prospective clients. Most importantly, this
+            		opportunity that comes around once a year will open up a great deal of networking that might as well lead to
+            		lifelong partnerships.</p>
+            </div>
+            
+            <div class="col-12 col-lg-12">
+            	<div class="box registration-choose d-flex justify-content-center align-items-center h-100">
+            
+            		<div class="row h-100">
+            			<div class="col-12 col-md-6">
+            
+            				<a class="reg__box w-100 h-100" href="#">
+            					<div class="background">
+            						<span></span>
+            						<span></span>
+            						<span></span>
+            					</div>
+            					<i class="icon-delegate-reg"></i>
+            					<h4 class="delegate-txt">Delegate
+            						Registration</h4>
+            				</a>
+            			</div>
+            			<div class="col-12 col-md-6">
+            
+            				<a class="reg__box w-100 h-100" href="#">
+            					<div class="background">
+            						<span></span>
+            						<span></span>
+            						<span></span>
+            					</div>
+            					<i class="icon-exhibition-reg"></i>
+            					<h4 class="delegate-txt">Delegate
+            						Registration</h4>
+            				</a>
+            
+            			</div>
+            		</div>
+            
+            
+            
+            
+            	</div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Package Modal -->
+    <div class="modal package__modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel"
+    	aria-hidden="true">
+    	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    		<div class="modal-content">
+    			<button class="modal__close-btn" data-bs-dismiss="modal" aria-label="Close">
+    				<i class="fa-regular fa-circle-xmark"></i>
+    			</button>
+    			<div class="modal-header mt-2">
+    				<div class="status__side">
+    					<p class="package-opportunities">5 opportunities available</p>
+    					<h2 class="modal-title package-name" id="packageModalLabel">Gold package</h2>
+    				</div>
+    				<div class="price__side">
+    					<p class="price-txt">Package price:</p>
+    					<p class="package-price">$350</p>
+    				</div>
+    
+    			</div>
+    			<div class="modal-body package__content">
+    				<div class="opportunities__head">
+    					<p class="head-txt">Registration</p>
+    				</div>
+    				<div class="package-list">
+    					<ul>
+    						<li>20 complimentary full-access registration passes to the Congress</li>
+    					</ul>
+    				</div>
+    				<div class="opportunities__head">
+    					<p class="head-txt">Advertisement & Acknowledgements</p>
+    				</div>
+    				<div class="package-list">
+    					<ul>
+    						<li>Inclusion of 1 promotional material in each delegate Welcome Bag</li>
+    						<li>2 full-page advertisements in the IAC Final Programme</li>
+    						<li>2nd choice of Prime space for one of the Advertisements in Final Programme</li>
+    						<li>Verbal recognition from the stage at the Opening Ceremony</li>
+    						<li>Verbal recognition from the stage at the Gala Dinner</li>
+    						<li>Logo on promotional banner displayed onsite</li>
+    						<li>A free-standing sign branded with sponsor’s logo, and marketing collateral in the delegate lounge
+    						</li>
+    						<li>
+    							Sponsor’s logo recognition on
+    							<ul>
+    								<li> - Onsite congress signage</li>
+    								<li> - Congress website and app</li>
+    								<li> - Final Programme</li>
+    								<li> - All promotional email blasts</li>
+    							</ul>
+    
+    						</li>
+    						<li>3 Young Professionals networking reception branding opportunities</li>
+    						<li>
+    							Logo recognition at the following events:
+    							<ul>
+    								<li> - Opening Ceremony</li>
+    								<li> - Gala Dinner</li>
+    
+    							</ul>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="opportunities__head">
+    					<p class="head-txt">Exhibition</p>
+    				</div>
+    				<div class="package-list">
+    					<ul>
+    						<li>Complimentary exhibition space in prime location: 200 sqm.</li>
+    						<li>2nd priority in choice of exhibition space location</li>
+    						<li>24 complimentary exhibition booth staff badges (access strictly limited to exhibition floor)</li>
+    						<li>Logo and exhibitor profile in the Final Programme exhibitor list and smartphone app</li>						
+    					</ul>
+    				</div>
+    				<div class="opportunities__head">
+    					<p class="head-txt">Additional Privileges</p>
+    				</div>
+    				<div class="package-list">
+    					<ul>
+    						<li>3 VIP seats at the Opening Ceremony</li>
+    						<li>3 complimentary tickets for the Gala Dinner</li>
+    						<li>3 complimentary tickets to the Cultural Events / Social Tours</li>				
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center flex-wrap flex-md-nowrap justify-content-center justify-content-md-start">
+                	<ul class="justify-content-end list-unstyled d-flex mb-3 mb-md-0 me-md-5">
+                		<li class="ms-0">
+                			<a class="text-muted" href="https://www.linkedin.com/events/6965993817531383808/">
+                				<i class="fa-brands fa-linkedin-in"></i>
+                			</a>
+                		</li>
+                		<li class="ms-4">
+                			<a class="text-muted" href="https://twitter.com/Iac2023">
+                				<i class="fa-brands fa-twitter"></i>
+                			</a>
+                		</li>
+                		<li class="ms-4">
+                			<a class="text-muted" href="https://www.facebook.com/IAC2023">
+                				<i class="fa-brands fa-facebook-f"></i>
+                			</a>
+                		</li>
+                		<li class="ms-4">
+                			<a class="text-muted" href="https://www.instagram.com/iac2023baku/">
+                				<i class="fa-brands fa-instagram"></i>
+                			</a>
+                		</li>
+                	</ul>
+                	<p class="mb-3 mb-md-0 text-muted">Copyright IAC 2022 <span class="ms-3"> all rights reserved</span></p>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
+                	<a class="mb-3 mb-md-0 text-muted" href="https://www.iac2023.org/privacy-policy/">Privacy Policy</a>
+                	<a class="mb-3 mb-md-0 ms-4 text-muted" href="https://iac2023.org/site-notice/">Site Notice</a>
+                </div>            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS-Assets -->
+    <script src="assets/plugins/jquery/jquery.min.js?_v=20221214213112"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js?_v=20221214213112"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js?_v=20221214213112"></script>
+    
+    <!-- Select 2 -->
+    <script src="assets/plugins/select2/select2.min.js?_v=20221214213112"></script>
+    <script src="assets/plugins/select2/material-select2.min.js?_v=20221214213112"></script>
+    <!-- Animation -->
+    <script src="assets/plugins/velocity/velocity.min.js?_v=20221214213112"></script>
+    <!-- Owl carousel -->
+    <!-- <script src="assets/plugins/owlcarousel/owl.carousel.min.js?_v=20221214213112"></script>
+    <script src="assets/plugins/owlcarousel/owl.settings.js?_v=20221214213112"></script> -->
+    <!-- Main js -->
+    <script src="assets/js/app.js?_v=20221214213112"></script>
+    
+    <!-- DataTable settings -->
+    <script>
+    	$(document).ready(function () {
+    
+    	// Shimmer example
+    	// setTimeout(function () {
+    	//         $('.shimmer-box').removeClass('d-flex').addClass('d-none');
+    	//         $('.show-data').removeClass('d-none').addClass('d-flex');
+    	//     }, 3000);
+    
+    	//    get your data from server here
+    	//    $.post('getdata.php', function (data) {
+    	//        // process your data here
+    	//       hide placeholder
+    	//       $('.timeline-wrapper').hide();
+    	//    })
+    
+    	/*******************************
+    	  * ACCORDION WITH TOGGLE ICONS
+    	  *******************************/
+    	function addIcon(e) {
+    		$(e.target)
+    			.prev('.accordion-header')
+    			.find(".circle-plus")
+    			.addClass('closed')
+    			.removeClass('opened');
+    	}
+    
+    	function removeIcon(e) {
+    		$(e.target)
+    			.prev('.accordion-header')
+    			.find(".circle-plus")
+    			.addClass('opened')
+    			.removeClass('closed');
+    	}
+    
+    	$('.accordion__faq').on('hidden.bs.collapse', addIcon);
+    	$('.accordion__faq').on('shown.bs.collapse', removeIcon);
+    
+    });
+    
+    </script>
+</body>
+
+</html>

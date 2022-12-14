@@ -1,0 +1,80 @@
+.delegate-choose {
+	padding: 40px;
+	margin-top: 36px;
+	margin-bottom: 84px;
+
+	@include breakpoint($mobile-bp) {
+		padding: 20px;
+	}
+
+	label {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: #64656a;
+	}
+
+	input,
+	select {
+		border: 1px solid #64656a;
+		border-radius: 40px;
+		padding: 12px 20px;
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			color: #64656a;
+			opacity: 0.4;
+		}
+	}
+}
+
+.btn-primary {
+	background: #1fabe3;
+	border: 1px solid #1fabe3;
+	color: $white;
+	border-radius: 40px;
+	outline: none;
+	padding: 12px 20px;
+	transition: all 0.5s;
+
+	&:hover {
+		text-decoration: none;
+		border: 1px solid #1fabe3;
+		background-color: $white;
+		color: #1fabe3;
+		transition: all 0.5s;
+	}
+}
+
+.goback-btn {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	color: #64656a;
+	outline: none;
+	padding: 0;
+	border: none;
+	transition: all 0.5s;
+
+	i {
+		margin-right: 10px;
+	}
+
+	&:hover {
+		outline: none;
+		border: none;
+		text-decoration: none;
+		color: #1fabe3;
+		transition: all 0.5s;
+	}
+}
+
+.delegate-title {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 38px;
+	color: #1fabe3;
+	margin-bottom: 32px;
+}

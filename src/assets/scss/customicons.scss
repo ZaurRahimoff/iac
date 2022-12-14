@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "_icons";
+  src: url("../fonts/icons/_icons.eot?ewxkuy");
+  src: url("../fonts/icons/_icons.eot?ewxkuy#iefix") format("embedded-opentype"),
+    url("../fonts/icons/_icons.ttf?ewxkuy") format("truetype"), url("../fonts/icons/_icons.woff?ewxkuy") format("woff"),
+    url("../fonts/icons/_icons.svg?ewxkuy#_icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+%ic {
+  font-family: "_icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"],
+[class*="icon-"] {
+  &:before {
+    @extend%ic;
+    display: block;
+  }
+}
+
+.icon-edit:before {
+  content: "\e900";
+}
+.icon-exhibition:before {
+  content: "\e901";
+}
+.icon-exhibition-reg:before {
+  content: "\e902";
+}
+.icon-mail-fast:before {
+  content: "\e903";
+}
+.icon-portal:before {
+  content: "\e904";
+}
+.icon-selected:before {
+  content: "\e905";
+}
+.icon-star:before {
+  content: "\e906";
+}
+.icon-store:before {
+  content: "\e907";
+}
+.icon-award:before {
+  content: "\e908";
+}
+.icon-contract:before {
+  content: "\e909";
+}
+.icon-delegate-reg:before {
+  content: "\e90a";
+}

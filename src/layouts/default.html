@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{> header }}
+</head>
+
+<body>
+
+    <!-- Head -->
+    <nav class="navbar navbar-dark bg-white">
+        <div class="container">
+            <!-- Header-top -->
+            {{> header-top }}
+        </div>
+    </nav>
+    <div class="container p-0">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg sticky-top p-0" aria-label="Main navigation">
+                <!-- Navbar -->
+                {{> navbar }}
+            </nav>
+        </header>
+    </div>
+
+
+    <!-- Main -->
+    <main class="flex-shrink-0 px-3 h-100 mb-auto">
+        <div class="container p-0">
+            <!-- Content -->
+            {{> body }}
+        </div>
+    </main>
+
+
+    {{> package-modal }}
+
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                {{> footer }}
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS-Assets -->
+    {{> js-assets }}
+
+</body>
+
+</html>
