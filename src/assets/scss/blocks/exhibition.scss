@@ -1,0 +1,117 @@
+.exhibition-page {
+	padding: 30px;
+	margin-top: 30px;
+	margin-bottom: 84px;
+
+	@include breakpoint($mobile-bp) {
+		padding: 20px;
+		margin-top: 20px;
+	}
+
+	.next-btn {
+		background: #1fabe3;
+		border-radius: 40px;
+		padding: 12px 16px;
+		margin: 0 0 0 auto;
+		border: none;
+		width: 100%;
+		color: #ffffff;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		transition: all 0.5s;
+
+		@include breakpoint($mobile-bp) {
+			margin: 20px 0 0 auto;
+		}
+
+		&:hover {
+			text-decoration: none;
+			border: none;
+			outline: none;
+			color: #1fabe3;
+			background: #ffffff;
+			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+			transition: all 0.5s;
+		}
+	}
+
+}
+
+.exhibition__card {
+	border: none;
+
+	@include breakpoint($mobile-bp) {
+		max-width: 100%;
+	}
+
+	.img__box {
+		width: 100%;
+		height: 100%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		background: #f9f9f9;
+		border-radius: 10px;
+		padding: 10px;
+	}
+
+	.card__title {
+		font-weight: 800;
+		font-size: 25px;
+		line-height: 31px;
+		color: #1fabe3;
+		margin-bottom: 27px;
+	}
+
+	label {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 16px;
+		color: #64656a;
+	}
+
+	input,
+	select {
+		border: 1px solid #64656a;
+		border-radius: 40px;
+		padding: 12px 20px;
+
+		&::placeholder {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			color: #64656a;
+			opacity: 0.4;
+		}
+	}
+
+	.contract-total-price {
+		border: 1px solid #d6eac0;
+		border-radius: 40px;
+		padding: 10px 24px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #78b82e;
+		height: 100%;
+		min-height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include breakpoint($mobile-bp) {
+			width: 100%;
+		}
+	}
+
+	.info-text {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		color: #79858d;
+		margin-top: 30px;
+	}
+
+}

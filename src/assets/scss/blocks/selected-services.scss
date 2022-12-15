@@ -1,0 +1,235 @@
+.selected-services {
+	padding: 78px 112px 30px;
+	margin-top: 52px;
+	margin-bottom: 30px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+
+	@include breakpoint($mobile-bp) {
+		padding: 36px;
+	}
+
+	.services__card {
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			text-decoration: none;
+			box-shadow: none;
+		}
+
+		.total__price-info {
+			background: #78b82e;
+			border-radius: 20px;
+			padding: 11px 25px;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 15px;
+			text-align: center;
+			color: #ffffff;
+			position: absolute;
+			top: -5%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			z-index: 1;
+
+			@include breakpoint($mobile-bp) {
+				top: 3%;
+				left: 90%;
+				transform: translate(-80%, 0);
+			}
+		}
+
+		.card__body {
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			flex-wrap: wrap;
+			border: none;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: #1fabe3;
+			border-radius: 20px;
+			padding: 33px 25px;
+			z-index: 0;
+			transition: all 0.5s;
+			height: 100%;
+			min-height: 184px;
+
+			@include breakpoint($mobile-bp) {
+				padding: 10px 15px;
+				align-items: start;
+				min-height: 115px;
+				max-width: 100%;
+			}
+		}
+
+		i {
+			font-size: 54px;
+			color: #ffffff;
+			transition: all 0.5s;
+
+			@include breakpoint($mobile-bp) {
+				font-size: 40px;
+			}
+		}
+
+		.card__title {
+			margin-top: 5px;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 26px;
+			text-align: center;
+			color: $white;
+			transition: all 0.5s;
+
+			@include breakpoint($mobile-bp) {
+				font-size: 15px;
+				line-height: 20px;
+				margin-top: 15px;
+			}
+		}
+
+		.hover__card {
+			border: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 20px;
+
+			&:hover {
+				text-decoration: none;
+				box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+				transition: all 0.5s;
+
+				.background span {
+					animation-name: move;
+					animation-duration: 3s;
+					animation-timing-function: linear;
+					animation-iteration-count: infinite;
+					transition: all 0.5s;
+				}
+			}
+		}
+
+		.card__package-info {
+			border: none;
+
+			&:hover {
+				text-decoration: none;
+				box-shadow: none;
+				transition: all 0.5s;
+			}
+
+			.package__info-list {
+				border: 1px solid #c9cccd;
+				border-radius: 20px;
+				list-style: none;
+				padding: 0 20px;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+
+				.list-item {
+					padding: 15px 0;
+					border-bottom: 1px solid #e3e3e3;
+					width: 100%;
+					display: inline-flex;
+					align-items: center;
+
+					&:last-child {
+						border-bottom: none;
+					}
+
+					.list-title {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 20px;
+						color: #6a6b6f;
+						margin-right: 10px;
+					}
+					.list-option {
+						font-weight: 800;
+						font-size: 16px;
+						line-height: 20px;
+						color: #d1d1d1;
+						display: inline-flex;
+						justify-content: space-between;
+						align-items: center;
+
+						&.selected,
+						&.signed {
+							font-weight: 800;
+							font-size: 16px;
+							line-height: 20px;
+							color: #78b82e;
+						}
+
+						&.pending {
+							font-weight: 800;
+							font-size: 16px;
+							line-height: 20px;
+							color: #f1aa3e;
+						}
+					}
+
+					.download-btn {
+						width: 26px;
+						height: 26px;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						margin-left: auto;
+						background-color: #78b82e;
+
+						i {
+							font-size: 13px;
+							margin: auto;
+						}
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contract-total-price {
+		border: 1px solid #d6eac0;
+		border-radius: 40px;
+		padding: 10px 24px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #78b82e;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include breakpoint($mobile-bp) {
+			width: 100%;
+		}
+	}
+}
+
+.package__name {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	color: #1fabe3;
+
+	@include breakpoint($mobile-bp) {
+		font-size: 20px;
+		line-height: 27px;
+	}
+}

@@ -5,6 +5,7 @@
 
 	@include breakpoint($mobile-bp) {
 		padding: 20px;
+		margin-top: 20px;
 	}
 }
 
@@ -14,6 +15,10 @@
 	line-height: 25px;
 	color: #64656a;
 	margin-bottom: 53px;
+
+	@include breakpoint($mobile-bp) {
+		margin-bottom: 20px;
+	}
 }
 
 .wrapper {
@@ -25,53 +30,46 @@
 
 .horizontal__card {
 	border: none;
-	max-width: 263px;
+	min-width: 263px;
 	min-height: 105px;
 	position: relative;
 	overflow: hidden;
-	display: flex;
-	flex-wrap: wrap;
+	display: inline-flex;
+	// flex-wrap: wrap;
 	border: none;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: start;
 	align-items: center;
 	background: #1fabe3;
 	border-radius: 20px;
-	padding: 33px;
+	padding: 27px 20px;
 	z-index: 0;
 	transition: all 0.5s;
 
 	@include breakpoint($mobile-bp) {
-		padding: 10px 15px;
-		align-items: start;
-		min-height: 105px;
 		max-width: 100%;
 	}
 
-	i {
-		font-size: 54px;
-		color: #ffffff;
-		transition: all 0.5s;
+	&.disabled {
+		opacity: 0.4;
+	}
 
-		@include breakpoint($mobile-bp) {
-			font-size: 40px;
-		}
+	i {
+		font-size: 40px;
+		color: #ffffff;
+		padding: 4px;
+		margin-right: 15px;
+		transition: all 0.5s;
 	}
 
 	.card__title {
-		margin-top: 5px;
+		margin: 0;
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 28px;
-		text-align: center;
+		text-align: left;
 		color: $white;
 		transition: all 0.5s;
-
-		@include breakpoint($mobile-bp) {
-			font-size: 15px;
-			line-height: 20px;
-			margin-top: 15px;
-		}
 	}
 
 	&:hover {
@@ -85,51 +83,6 @@
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
 			transition: all 0.5s;
-		}
-	}
-
-	.background {
-		width: 100%;
-		height: 100%;
-		background: #1fabe3;
-		position: absolute;
-		z-index: -1;
-		transition: all 0.5s;
-
-		& span {
-			width: $particleSize;
-			height: $particleSize;
-			border-radius: $particleSize;
-			backface-visibility: hidden;
-			position: absolute;
-			transition: all 0.5s;
-
-			&:nth-child(1) {
-				color: #be83ed;
-				top: -15px;
-				right: 0;
-				box-shadow: -21vmin 0 8vmin #be83ed;
-			}
-
-			&:nth-child(2) {
-				color: #1d48b8;
-				top: 80%;
-				right: 107%;
-				box-shadow: 18vmin 0 8vmin #1d48b8;
-			}
-
-			&:nth-child(3) {
-				color: #f3df28;
-				top: 30px;
-				left: 0;
-				box-shadow: 22vmin 0 8vmin #f3df28;
-			}
-		}
-	}
-
-	@keyframes move {
-		100% {
-			transform: translate3d(0, 0, 1px) rotate(360deg);
 		}
 	}
 }

@@ -7,7 +7,6 @@ html {
     // font-size: 62.5%;
 }
 
-
 body {
     background-color: $grey-10;
     font-family: "Averta CY", sans-serif;
@@ -46,363 +45,99 @@ a {
     }
 }
 
+.page-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    color: #64656a;
 
-// .text-red {
-//     color: $red !important;
-//     font-weight: 400;
-//     font-size: 10px;
-//     line-height: 16px;
-// }
+    @include breakpoint($mobile-bp) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
 
-// .primary_outline-btn {
-//     background: $white;
-//     border: 1px solid $blue;
-//     border-radius: 6px;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 21px;
-//     color: $blue;
-//     padding: 10px 25px;
-//     text-decoration: none;
-//     text-align: center;
-//     transition: all 0.3s ease-in;
+.page-txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #79858d;
 
-//     &.technical_btn {
-//         max-height: 50px;
-//     }
+    @include breakpoint($mobile-bp) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
 
-//     &:hover,
-//     &:focus {
-//         background: $blue;
-//         border: 1px solid $blue;
-//         color: $white;
-//         text-decoration: none;
-//         transition: all 0.3s ease-in;
-//     }
-// }
+.anchor {
+    color: #1FABE3;
+}
 
-// .primary-btn {
-//     background: $blue;
-//     border: 1px solid $blue;
-//     border-radius: 6px;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 21px;
-//     color: $white;
-//     padding: 10px 25px;
-//     text-decoration: none;
-//     text-align: center;
-//     transition: all 0.3s ease-in;
+.platinum {
+    color: #A2BDCB;
+}
 
-//     &:hover,
-//     &:focus {
-//         background: $white;
-//         border: 1px solid $blue;
-//         color: $blue;
-//         text-decoration: none;
-//         transition: all 0.3s ease-in;
-//     }
-// }
+.gold {
+    color: #E3D468;
+}
 
-// .success-btn {
-//     background: $green;
-//     border: 1px solid $green;
-//     border-radius: 6px;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 21px;
-//     color: $white;
-//     padding: 10px 25px;
-//     text-decoration: none;
-//     text-align: center;
-//     transition: all 0.3s ease-in;
+.silver {
+    color: #C9CCCD;
+}
 
-//     &:hover,
-//     &:focus {
-//         background: $white;
-//         border: 1px solid $green;
-//         color: $green;
-//         text-decoration: none;
-//         transition: all 0.3s ease-in;
-//     }
-// }
+.bronze {
+    color: #BCA992;
+}
 
-// .warning-btn {
-//     background: $yellow-light;
-//     border: 1px solid $yellow-light;
-//     border-radius: 6px;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 21px;
-//     color: $white;
-//     padding: 10px 25px;
-//     text-decoration: none;
-//     text-align: center;
-//     transition: all 0.3s ease-in;
 
-//     &:hover,
-//     &:focus {
-//         background: $white;
-//         border: 1px solid $yellow-light;
-//         color: $yellow-light;
-//         text-decoration: none;
-//         transition: all 0.3s ease-in;
-//     }
-// }
+.background {
+    width: 100%;
+    height: 100%;
+    background: #1fabe3;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.5s;
 
-// .cancel-btn {
-//     background: $white;
-//     border: 1px solid $red;
-//     border-radius: 6px;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 21px;
-//     color: $red;
-//     padding: 10px 37px;
-//     margin-right: 20px;
-//     text-decoration: none;
-//     text-align: center;
-//     transition: all 0.3s ease-in;
+    & span {
+        width: $particleSize;
+        height: $particleSize;
+        border-radius: $particleSize;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: all 0.5s;
 
-//     &:hover,
-//     &:focus {
-//         background: $red;
-//         border: 1px solid $red;
-//         color: $white;
-//         text-decoration: none;
-//         transition: all 0.3s ease-in;
-//     }
-// }
+        &:nth-child(1) {
+            color: #be83ed;
+            top: -15px;
+            right: 0;
+            box-shadow: -21vmin 0 8vmin #be83ed;
+        }
 
-// .info-block {
-//     padding: 18px 20px;
-//     background-color: $blue-10;
-//     border-radius: 6px;
-//     margin-bottom: 20px;
+        &:nth-child(2) {
+            color: #1d48b8;
+            top: 80%;
+            right: 107%;
+            box-shadow: 18vmin 0 8vmin #1d48b8;
+        }
 
-//     @include breakpoint($tablet-bp) {
-//         padding: 4px 8px;
-//         margin-bottom: 10px;
-//     }
+        &:nth-child(3) {
+            color: #f3df28;
+            top: 30px;
+            left: 0;
+            box-shadow: 22vmin 0 8vmin #f3df28;
+        }
+    }
+}
 
-//     .info-txt {
-//         font-weight: 400;
-//         font-size: 12px;
-//         line-height: 18px;
-//         color: $light-dark;
-
-//         @include breakpoint($tablet-bp) {
-//             font-size: 10px;
-//             line-height: 16px;
-//         }
-
-//         .info-deadline {
-//             font-weight: 600;
-//             color: $red;
-//         }
-//     }
-// }
-
-// .form-alert {
-//     padding: 16px 20px;
-//     background-color: $red-80;
-//     border-radius: 6px;
-//     margin-bottom: 20px;
-
-//     .alert-txt {
-//         color: $white;
-//         font-weight: 500;
-//         font-size: 12px;
-//         line-height: 18px;
-//     }
-
-//     @include breakpoint($tablet-bp) {
-//         margin-bottom: 0;
-//         font-size: 10px;
-//         padding: 10px;
-//     }
-// }
-
-// .form-info {
-//     padding: 16px 20px;
-//     background-color: $green-10;
-//     border-radius: 6px;
-//     margin-bottom: 20px;
-
-//     .info-txt {
-//         color: $light-dark;
-//         font-weight: 500;
-//         font-size: 12px;
-//         line-height: 18px;
-//     }
-
-//     @include breakpoint($tablet-bp) {
-//         margin-bottom: 0;
-//         font-size: 10px;
-//         padding: 10px;
-//     }
-// }
-
-// .header-lang__switch {
-//     margin-left: auto;
-
-//     .btn-group {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-around;
-
-//         .btn {
-//             width: 40px;
-//             height: 40px;
-//             background: $white;
-//             border: 0.5px solid $blue-800;
-//             border-radius: 6px !important;
-//             color: $blue-800;
-//             margin-left: 10px;
-//             font-weight: 600;
-//             font-size: 12px;
-//             line-height: 18px;
-//             transition: all 0.3s ease-in-out;
-
-//             &.active {
-//                 background: $blue-800;
-//                 border: 0.5px solid $blue-800;
-//                 color: $white;
-//                 border-radius: 6px;
-//             }
-
-//             &:not(.active):hover {
-//                 background: $blue-light;
-//                 border: 0.5px solid $blue-light;
-//                 color: $white;
-//                 transition: all 0.3s ease-in-out;
-//             }
-//         }
-//     }
-// }
-
-// .tab-lang__switch {
-//     margin-left: auto;
-
-//     @include breakpoint($tablet-bp) {
-//         width: 100%;
-//         margin-left: 0;
-//         margin-top: 13px;
-//     }
-
-//     .nav-tabs {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-around;
-//         border: none;
-//         margin: 0;
-//         // padding: 0;
-
-//         @include breakpoint($tablet-bp) {
-//             width: 100%;
-//             flex-wrap: nowrap;
-//             padding: 5px 0;
-
-//             &::after {
-//                 display: none;
-//             }
-//         }
-
-//         .nav-link {
-//             width: 40px;
-//             height: 40px;
-//             background: $white;
-//             border: 0.5px solid $blue-800;
-//             border-radius: 6px !important;
-//             color: $blue-800;
-//             margin-left: 10px;
-//             padding: 0;
-//             font-weight: 600;
-//             font-size: 12px;
-//             line-height: 18px;
-//             transition: all 0.3s ease-in-out;
-
-//             &.active {
-//                 background: $blue;
-//                 border: 1px solid $blue;
-//                 color: $white;
-//                 border-radius: 6px;
-//             }
-
-//             &:not(.active):hover {
-//                 background: $blue-light;
-//                 border: 0.5px solid $blue-light;
-//                 color: $white;
-//                 transition: all 0.3s ease-in-out;
-//             }
-
-//             @include breakpoint($tablet-bp) {
-//                 width: 100%;
-
-//                 &:first-child {
-//                     margin-left: 0;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// .form-check {
-//     display: inline-flex;
-//     align-items: center;
-//     padding: 0;
-
-//     @include breakpoint($mobile-bp) {
-//         align-items: baseline;
-//     }
-
-//     input {
-//         border-color: $grey;
-//         cursor: pointer;
-//         margin: auto !important;
-//         min-width: 1rem;
-
-//         &:checked {
-//             border-color: $blue;
-//             background-color: $blue;
-
-//             ~ .subcategory-label {
-//                 color: $blue;
-//             }
-//         }
-//     }
-
-//     .subcategory-label,
-//     .checkbox-label {
-//         font-weight: 600;
-//         font-size: 12px;
-//         line-height: 30px;
-//         color: $blue;
-//         margin-left: 10px;
-//         cursor: pointer;
-//     }
-// }
-
-// .btn-file {
-//     position: relative;
-//     overflow: hidden;
-// }
-// .btn-file input[type="file"] {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     min-width: 100%;
-//     min-height: 100%;
-//     font-size: 100px;
-//     text-align: right;
-//     filter: alpha(opacity=0);
-//     opacity: 0;
-//     outline: none;
-//     background: white;
-//     cursor: inherit;
-//     display: block;
-// }
-
+@keyframes move {
+    0% {
+        transition: all 0.5s;
+    }
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+        transition: all 0.5s;
+    }
+}
 
 /* Blocks */
 @import "blocks/header";
@@ -414,7 +149,9 @@ a {
 @import "blocks/sponsorship-tabs";
 @import "blocks/ala-carte-sponsorship";
 @import "blocks/select-edit";
+@import "blocks/selected-services";
 @import "blocks/delegate-exhibition";
+@import "blocks/exhibition";
 @import "blocks/nav";
 @import "blocks/modal";
 @import "blocks/footer";
