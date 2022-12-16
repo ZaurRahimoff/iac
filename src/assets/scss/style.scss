@@ -68,27 +68,91 @@ a {
         line-height: 14px;
     }
 }
-
-.anchor {
-    color: #1FABE3;
+.bg-primary {
+    background-color: #1fabe3 !important;
+    background: #1fabe3 !important;
 }
 
-.platinum {
-    color: #A2BDCB;
+.text-primary {
+    color: #1fabe3;
 }
 
-.gold {
-    color: #E3D468;
+.bg-signed {
+    background-color: #78b82e;
+    background: #78b82e;
 }
 
-.silver {
-    color: #C9CCCD;
+.text-signed {
+    color: #78b82e;
 }
 
-.bronze {
-    color: #BCA992;
+.bg-pending {
+    background-color: #f1aa3e;
+    background: #f1aa3e;
 }
 
+.text-pending {
+    color: #f1aa3e;
+}
+
+.bg-denied {
+    background-color: #f44336;
+    background: #f44336;
+}
+
+.text-denied {
+    color: #f44336;
+}
+
+.bg-success {
+    background-color: #1fabe3 !important;
+    background: #1fabe3 !important;
+}
+
+.text-anchor {
+    color: #1fabe3;
+}
+
+.text-platinum {
+    color: #a2bdcb;
+}
+
+.text-gold {
+    color: #e3d468;
+}
+
+.text-silver {
+    color: #c9cccd;
+}
+
+.text-bronze {
+    color: #bca992;
+}
+
+.bg-anchor {
+    background-color: #1fabe3 !important;
+    background: #1fabe3 !important;
+}
+
+.bg-platinum {
+    background-color: #a2bdcb !important;
+    background: #a2bdcb !important;
+}
+
+.bg-gold {
+    background-color: #e3d468 !important;
+    background: #e3d468 !important;
+}
+
+.bg-silver {
+    background-color: #c9cccd !important;
+    background: #c9cccd !important;
+}
+
+.bg-bronze {
+    background-color: #bca992 !important;
+    background: #bca992 !important;
+}
 
 .background {
     width: 100%;
@@ -152,6 +216,7 @@ a {
 @import "blocks/selected-services";
 @import "blocks/delegate-exhibition";
 @import "blocks/exhibition";
+@import "blocks/packages";
 @import "blocks/nav";
 @import "blocks/modal";
 @import "blocks/footer";
