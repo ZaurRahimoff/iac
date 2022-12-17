@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>IAC 2023</title>
     
-    <!-- <script data-search-pseudo-elements defer src="assets/plugins/fontawesome/js/all.min.js?_v=20221216191827"></script> -->
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css?_v=20221216191827">
-    <link rel="stylesheet" href="assets/css/customicons.min.css?_v=20221216191827">
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css?_v=20221216191827">
+    <!-- <script data-search-pseudo-elements defer src="assets/plugins/fontawesome/js/all.min.js?_v=20221217185512"></script> -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css?_v=20221217185512">
+    <link rel="stylesheet" href="assets/css/customicons.min.css?_v=20221217185512">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css?_v=20221217185512">
     <!-- Select2 -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css?_v=20221216191827">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-select.min.css?_v=20221217185512">
     <!-- Owl carousel -->
-    <!-- <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.theme.default.min.css?_v=20221216191827">
-    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css?_v=20221216191827"> -->
+    <!-- <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.theme.default.min.css?_v=20221217185512">
+    <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css?_v=20221217185512"> -->
     <!-- Main css -->
-    <link rel="stylesheet" href="assets/css/style.min.css?_v=20221216191827"></head>
+    <link rel="stylesheet" href="assets/css/style.min.css?_v=20221217185512"></head>
 
 <body>
 
@@ -172,7 +172,7 @@
     <main class="flex-shrink-0 px-3 h-100 mb-auto">
         <div class="container p-0">
             <!-- Content -->
-            
+            <div id="accordion">
             <div class="col-12 col-lg-12">
             
             	<a href="#" class="btn goback-btn mt-3">
@@ -221,8 +221,7 @@
             							</li>
             						</ul>
             
-            						<a data-bs-toggle="collapse" href="#sponsorship" role="button" aria-expanded="false"
-            							aria-controls="sponsorship" class="btn btn-primary">View more</a>
+            						<a data-bs-toggle="collapse" href="#sponsorship" class="btn btn-primary">View more</a>
             					</div>
             
             				</div>
@@ -262,8 +261,7 @@
             								<span class="list-option">---</span>
             							</li>
             						</ul>
-            						<a data-bs-toggle="collapse" href="#alacarte" role="button" aria-expanded="false"
-            							aria-controls="alacarte" class="btn btn-primary">View more</a>
+            						<a data-bs-toggle="collapse" href="#alacarte" class="btn btn-primary">View more</a>
             					</div>
             
             
@@ -303,8 +301,7 @@
             								<span class="list-option">Deactive</span>
             							</li>
             						</ul>
-            						<a data-bs-toggle="collapse" href="#exhibition" role="button" aria-expanded="false"
-            							aria-controls="exhibition" class="btn btn-primary">Order now</a>
+            						<a data-bs-toggle="collapse" href="#exhibition" class="btn btn-primary">Order now</a>
             					</div>
             
             
@@ -322,17 +319,16 @@
             	</div>
             </div>
             
-            <div class="col-12 collapse mb-5" id="sponsorship">
+            <div class="col-12 collapse mb-5" id="sponsorship" data-bs-parent="#accordion">
             
             	<h4 class="package__name my-3">Sponsorship packages</h4>
             
             
-            	<div class="row row-cols-1 row-cols-md-2 g-4">
+            	<div class="row g-4">
             		<div class="col-12 col-md-12">
-            			<div class="card alacarte__sponsorship d-flex flex-column h-100">
-            				<div class="card-header">
-            					<div class="bg-anchor">
-            						<div class="package__head">
+            			<div class="card sponsorship__package-card box d-flex flex-column h-100">
+            				<div class="card-header">				
+            						<div class="package__head bg-anchor">
             							<div class="head__left">
             								<h4 class="package-title">Anchor</h4>
             								<span class="package-opportunities">4 opportunities available</span>
@@ -341,7 +337,6 @@
             								<p class="package-price">$50</p>
             							</div>
             						</div>
-            					</div>
             				</div>
             				<div class="card-body">
             					<div class="row">
@@ -394,49 +389,28 @@
             						<div class="col-12 col-md-5">
             
             							<div class="opportunities__head bg-anchor">
-            								<p class="head-txt">Registration</p>
+            								<p class="head-txt">Exhibition</p>
             							</div>
             							<div class="package-list">
             								<ul>
-            									<li>20 complimentary full-access registration passes to the Congress</li>
+            									<li>Complimentary exhibition space in prime location: 200 sqm.</li>
+            									<li>2nd priority in choice of exhibition space location</li>
+            									<li>24 complimentary exhibition booth staff badges (access strictly limited to
+            										exhibition floor)</li>
+            									<li>Logo and exhibitor profile in the Final Programme exhibitor list and smartphone
+            										app</li>
             								</ul>
             							</div>
             							<div class="opportunities__head bg-anchor">
-            								<p class="head-txt">Advertisement & Acknowledgements</p>
+            								<p class="head-txt">Additional Privileges</p>
             							</div>
             							<div class="package-list">
             								<ul>
-            									<li>Inclusion of 1 promotional material in each delegate Welcome Bag</li>
-            									<li>2 full-page advertisements in the IAC Final Programme</li>
-            									<li>2nd choice of Prime space for one of the Advertisements in Final Programme</li>
-            									<li>Verbal recognition from the stage at the Opening Ceremony</li>
-            									<li>Verbal recognition from the stage at the Gala Dinner</li>
-            									<li>Logo on promotional banner displayed onsite</li>
-            									<li>A free-standing sign branded with sponsor’s logo, and marketing collateral in
-            										the delegate lounge
-            									</li>
-            									<li>
-            										Sponsor’s logo recognition on
-            										<ul>
-            											<li> - Onsite congress signage</li>
-            											<li> - Congress website and app</li>
-            											<li> - Final Programme</li>
-            											<li> - All promotional email blasts</li>
-            										</ul>
-            
-            									</li>
-            									<li>3 Young Professionals networking reception branding opportunities</li>
-            									<li>
-            										Logo recognition at the following events:
-            										<ul>
-            											<li> - Opening Ceremony</li>
-            											<li> - Gala Dinner</li>
-            
-            										</ul>
-            									</li>
+            									<li>3 VIP seats at the Opening Ceremony</li>
+            									<li>3 complimentary tickets for the Gala Dinner</li>
+            									<li>3 complimentary tickets to the Cultural Events / Social Tours</li>
             								</ul>
             							</div>
-            
             
             
             						</div>
@@ -449,7 +423,7 @@
             	</div>
             </div>
             
-            <div class="col-12 collapse mb-5" id="alacarte">
+            <div class="col-12 collapse mb-5" id="alacarte" data-bs-parent="#accordion">
             
             	<h4 class="package__name my-3">A La Carte Sponsorship items</h4>
             
@@ -535,7 +509,7 @@
             	</div>
             </div>
             
-            <div class="col-12 collapse mb-5" id="exhibition">
+            <div class="col-12 collapse mb-5" id="exhibition" data-bs-parent="#accordion">
             
             	<h4 class="package__name my-3">Exhibition space</h4>
             
@@ -583,6 +557,7 @@
             
             		</div>
             	</div>
+            </div>
             </div>
         </div>
     </main>
@@ -713,20 +688,20 @@
 
 
     <!-- JS-Assets -->
-    <script src="assets/plugins/jquery/jquery.min.js?_v=20221216191827"></script>
-    <script src="assets/plugins/bootstrap/js/popper.min.js?_v=20221216191827"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js?_v=20221216191827"></script>
+    <script src="assets/plugins/jquery/jquery.min.js?_v=20221217185512"></script>
+    <script src="assets/plugins/bootstrap/js/popper.min.js?_v=20221217185512"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js?_v=20221217185512"></script>
     
     <!-- Select 2 -->
-    <script src="assets/plugins/select2/select2.min.js?_v=20221216191827"></script>
-    <script src="assets/plugins/select2/material-select2.min.js?_v=20221216191827"></script>
+    <script src="assets/plugins/select2/select2.min.js?_v=20221217185512"></script>
+    <script src="assets/plugins/select2/material-select2.min.js?_v=20221217185512"></script>
     <!-- Animation -->
-    <script src="assets/plugins/velocity/velocity.min.js?_v=20221216191827"></script>
+    <script src="assets/plugins/velocity/velocity.min.js?_v=20221217185512"></script>
     <!-- Owl carousel -->
-    <!-- <script src="assets/plugins/owlcarousel/owl.carousel.min.js?_v=20221216191827"></script>
-    <script src="assets/plugins/owlcarousel/owl.settings.js?_v=20221216191827"></script> -->
+    <!-- <script src="assets/plugins/owlcarousel/owl.carousel.min.js?_v=20221217185512"></script>
+    <script src="assets/plugins/owlcarousel/owl.settings.js?_v=20221217185512"></script> -->
     <!-- Main js -->
-    <script src="assets/js/app.js?_v=20221216191827"></script>
+    <script src="assets/js/app.js?_v=20221217185512"></script>
     
     <!-- DataTable settings -->
     <script>
