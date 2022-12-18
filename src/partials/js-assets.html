@@ -17,41 +17,45 @@
 <script>
 	$(document).ready(function () {
 
-	// Shimmer example
-	// setTimeout(function () {
-	//         $('.shimmer-box').removeClass('d-flex').addClass('d-none');
-	//         $('.show-data').removeClass('d-none').addClass('d-flex');
-	//     }, 3000);
+		// Shimmer example
+		// setTimeout(function () {
+		//         $('.shimmer-box').removeClass('d-flex').addClass('d-none');
+		//         $('.show-data').removeClass('d-none').addClass('d-flex');
+		//     }, 3000);
 
-	//    get your data from server here
-	//    $.post('getdata.php', function (data) {
-	//        // process your data here
-	//       hide placeholder
-	//       $('.timeline-wrapper').hide();
-	//    })
+		//    get your data from server here
+		//    $.post('getdata.php', function (data) {
+		//        // process your data here
+		//       hide placeholder
+		//       $('.timeline-wrapper').hide();
+		//    })
 
-	/*******************************
-	  * ACCORDION WITH TOGGLE ICONS
-	  *******************************/
-	function addIcon(e) {
-		$(e.target)
-			.prev('.accordion-header')
-			.find(".circle-plus")
-			.addClass('closed')
-			.removeClass('opened');
-	}
+		/*******************************
+		  * ACCORDION WITH TOGGLE ICONS
+		  *******************************/
+		function addIcon(e) {
+			$(e.target)
+				.prev('.accordion-header')
+				.find(".circle-plus")
+				.addClass('closed')
+				.removeClass('opened');
+		}
 
-	function removeIcon(e) {
-		$(e.target)
-			.prev('.accordion-header')
-			.find(".circle-plus")
-			.addClass('opened')
-			.removeClass('closed');
-	}
+		function removeIcon(e) {
+			$(e.target)
+				.prev('.accordion-header')
+				.find(".circle-plus")
+				.addClass('opened')
+				.removeClass('closed');
+		}
 
-	$('.accordion__faq').on('hidden.bs.collapse', addIcon);
-	$('.accordion__faq').on('shown.bs.collapse', removeIcon);
+		$('.accordion__faq').on('hidden.bs.collapse', addIcon);
+		$('.accordion__faq').on('shown.bs.collapse', removeIcon);
 
-});
+	});
 
+
+	// Tooltips 
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 </script>

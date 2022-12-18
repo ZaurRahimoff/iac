@@ -9,16 +9,104 @@
 	}
 }
 
+.need-help {
+	margin-bottom: 53px;
+
+	.btn {
+		padding: 10px;
+	}
+
+	@include breakpoint($mobile-bp) {
+		margin-bottom: 20px;
+	}
+}
+
+.needHelp-modal {
+	.modal-header {
+		border-bottom: none;
+	}
+
+	.modal__close-btn {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+
+		i {
+			color: $black;
+			font-size: 24px;
+
+			@include breakpoint($mobile-bp) {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.modal-body {
+		margin: 0 15px 0 0;
+		.content__title {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+			color: #6a6b6f;
+		}
+		.content__text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			color: #64656a;
+		}
+
+		@include scrollbars(5px, 5px, #1fabe3, #e3e3e3);
+	}
+
+	.modal-footer {
+		border-top: none;
+	}
+
+	.modal-content {
+		border-radius: 20px;
+		.modal-title {
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 27px;
+
+			color: #1fabe3;
+		}
+	}
+}
+
+.log-out {
+	a {
+		background-color: transparent;
+		border: none;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 14px;
+		color: #64656a;
+
+		&:hover {
+			border: none;
+		}
+	}
+}
+
 .box__title {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 25px;
 	color: #64656a;
-	margin-bottom: 53px;
+}
 
-	@include breakpoint($mobile-bp) {
-		margin-bottom: 20px;
-	}
+// .info-tooltip {
+// 	background-color: $blue;
+// 	background: $blue;
+// 	color: $blue;
+// }
+
+.info-tooltip {
+	--bs-tooltip-bg: #64656a;
+	--bs-tooltip-border-radius: 10px;
+	--bs-tooltip-opacity: 0.9;
 }
 
 .wrapper {
@@ -26,6 +114,40 @@
 	position: relative;
 	max-width: 546px;
 	margin: 0 auto 100px;
+
+	@include breakpoint($mobile-bp) {
+		margin: 0 auto 30px;
+	}
+
+	.row > * {
+		position: relative;
+		.info-icon {
+			position: absolute;
+			top: -18px;
+			right: -2px;
+			z-index: 1;
+			background-color: $white;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@include breakpoint($mobile-bp) {
+				display: none;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			i {
+				padding: 6px;
+				font-size: 25px;
+				color: #1fabe3;
+				transition: all 0.5s;
+			}
+		}
+	}
 }
 
 .horizontal__card {

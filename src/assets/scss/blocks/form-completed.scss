@@ -1,0 +1,74 @@
+.form-completed {
+	padding: 40px;
+	margin-top: 36px;
+	margin-bottom: 84px;
+
+	@include breakpoint($mobile-bp) {
+		padding: 20px;
+	}
+
+	.success__block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+		max-width: 540px;
+		margin: 0 auto;
+
+		@include breakpoint($mobile-bp) {
+			padding: 0;
+		}
+
+		.mail-icon {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			i {
+				font-size: 50px;
+				font-weight: bold;
+				color: #64656a;
+			}
+		}
+		.success-title {
+			font-weight: 700;
+			font-size: 25px;
+			line-height: 38px;
+			color: #78b82e;
+			margin-bottom: 5px;
+		}
+		.success-text {
+			p {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 22px;
+				text-align: center;
+				color: #79858d;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.success-btn {
+		background: #1fabe3;
+		border: 1px solid #1fabe3;
+		color: $white;
+		min-width: 130px;
+		border-radius: 40px;
+		outline: none;
+		padding: 12px 20px;
+		transition: all 0.5s;
+
+		&:hover {
+			text-decoration: none;
+			border: 1px solid #1fabe3;
+			background-color: $white;
+			color: #1fabe3;
+			transition: all 0.5s;
+		}
+	}
+}
